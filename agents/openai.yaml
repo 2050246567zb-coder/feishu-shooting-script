@@ -1,0 +1,4 @@
+interface:
+  display_name: "飞书拍摄协作脚本"
+  short_description: "把视频脚本按镜头整理到飞书，保留参考图、地点分类和拍摄勾选"
+  default_prompt: "使用 $feishu-shooting-script 将这份脚本整理成飞书拍摄协作表，按原文对应台词与镜头，并保留参考图和地点分类。"

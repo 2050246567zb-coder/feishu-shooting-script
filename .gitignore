@@ -1,0 +1,14 @@
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.env
+.env.*
+!.env.example
+work/
+outputs/
+state.json
+normalized.json
+*.ndjson
+*.manifest.json
+.DS_Store

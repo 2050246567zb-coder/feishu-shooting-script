@@ -1,0 +1,18 @@
+{
+  "table_name": "镜头清单",
+  "fields": [
+    {"name":"镜号","type":"text","description":"按脚本顺序编号，如001、002；需要时可用002A、002B。"},
+    {"name":"台词／文案","type":"text","description":"对应本行镜头的原始口播、台词或旁白。"},
+    {"name":"镜头描述","type":"text","description":"原脚本中与台词对应的画面、动作、景别或运镜。"},
+    {"name":"画面参考","type":"attachment","description":"本镜头的参考图片附件，可放多张。"},
+    {"name":"拍摄地点","type":"select","multiple":false,"default_value":["待定"],"options":[{"name":"待定","hue":"Gray","lightness":"Lighter"}],"description":"只根据原文明确写出的地点或用户指定地点分类，无法确定时选待定。"},
+    {"name":"拍摄备注","type":"text","description":"道具、拍摄要求、补拍说明等与本镜头直接相关的备注。"},
+    {"name":"已拍摄","type":"checkbox","description":"拍摄完成后勾选，需要重拍时取消勾选。"}
+  ],
+  "views": [
+    {"name":"完整脚本","type":"grid","sort":{"sort_config":[{"field":"镜号","desc":false}]},"group":{"group_config":[]},"filter":{"conditions":[]}},
+    {"name":"按地点拍摄","type":"grid","sort":{"sort_config":[{"field":"镜号","desc":false}]},"group":{"group_config":[{"field":"拍摄地点","desc":false}]},"filter":{"conditions":[]}},
+    {"name":"待拍镜头","type":"grid","sort":{"sort_config":[{"field":"镜号","desc":false}]},"group":{"group_config":[{"field":"拍摄地点","desc":false}]},"filter":{"logic":"and","conditions":[["已拍摄","==",false]]}}
+  ],
+  "layout_hints": {"shot_id_width_px":120,"width_requires_ui_or_verified_api":true}
+}
