@@ -17,6 +17,16 @@
 
 ## 安装
 
+### 复制给 Codex 安装
+
+复制下面整段发给 Codex：
+
+```text
+请帮我安装这个 Codex Skill：https://github.com/2050246567zb-coder/feishu-shooting-script 。先阅读仓库的 INSTALL.md，按说明安装到当前 Codex 的技能目录；已有同名版本时先备份再更新。安装后检查 Python、飞书 CLI 和个人账号授权，缺少的配置请引导我完成，并保留现有飞书配置。完成后告诉我如何启用；之后我发送视频脚本时，请使用这个 Skill 将脚本整理成飞书拍摄协作多维表格。
+```
+
+### 手动安装
+
 下载 [最新安装包](https://github.com/2050246567zb-coder/feishu-shooting-script/releases/latest)，解压后把整个文件夹交给 Codex：
 
 > 帮我安装这个 Skill，先阅读其中的 INSTALL.md。
